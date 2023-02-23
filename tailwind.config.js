@@ -14,6 +14,7 @@ module.exports = {
         },
 
         spacing: {
+          'container': '1170px',
           '0': '0',
           '1': '4px',
           '2': '8px',
@@ -40,7 +41,17 @@ module.exports = {
 
         colors: {
           "green-primary" : "#0C713D",
-        }
+        },
+
+        screens: {
+          'xs': '320px',
+          'sm': '640px',
+          'md': '768px',
+          'lg': '1024px',
+          'xl': '1280px',
+          '2xl': '1536px',
+        },
+
       }
     }
     // ...

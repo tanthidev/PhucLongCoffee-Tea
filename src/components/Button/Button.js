@@ -10,7 +10,6 @@ function Button({content, icon, to, href, styles}) {
         if(to){
             Type = Link
         }
-    console.log(styles);
 
     return ( 
         <Type className="border border-green-primary text-green-primary px-2 py-2 text-2xl rounded-lg hover:bg-green-primary hover:text-white">
