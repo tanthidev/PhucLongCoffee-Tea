@@ -283,16 +283,24 @@ function DefaultLayout({children}){
     return(
         <LayoutContext.Provider value={data}>
             <div>
-                <Header onClick={toggleSidebar}/>
-                <div className="hidden lg:block">
-                  <SideBar />
+                <div className="fixed z-10 bg-white top-0 justify-center w-full">
+                  <Header onClick={toggleSidebar}/>
+                  {/* SideBar */}
+                  <div>
+                    {/* destop sidebar */}
+                    <div className="hidden lg:block border-b-2 border-gray-200 py-1">
+                      <SideBar />
+                    </div>
+                    {/* Mobile sidebar */}
+                    <div className="block lg:hidden">
+                      {sidebarVisible && <SideBarMobile/>}
+                    </div>
+                    {/*  */}
+                  </div>
                 </div>
-                {/*  */}
-                <div className="block lg:hidden">
-                  {sidebarVisible && <SideBarMobile/>}
+                <div className="mt-26">
+                  {children}
                 </div>
-                {/*  */}
-                {children}
                 <Footer/>
             </div>
         </LayoutContext.Provider>

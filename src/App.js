@@ -5,7 +5,7 @@ import DefaultLayout from "./Layout/Layout";
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="App overflow-hidden">
         <Routes>
           {publicRoutes.map((route, index)=> {
             // conditions on a case-by-case basis

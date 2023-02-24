@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function Button({content, icon, to, href, styles}) {
+function Button({content, icon, to, href, styles, type}) {
     
     let Type = 'button';
 
@@ -11,8 +11,13 @@ function Button({content, icon, to, href, styles}) {
             Type = Link
         }
 
+    let classNames = "border border-green-primary text-green-primary px-2 py-2 text-2xl rounded-lg hover:bg-green-primary hover:text-white"
+    if(type==="line-green"){
+        classNames = "border border-white text-white px-2 py-2 text-2xl rounded-lg hover:border-white"
+    }
+
     return ( 
-        <Type className="border border-green-primary text-green-primary px-2 py-2 text-2xl rounded-lg hover:bg-green-primary hover:text-white">
+        <Type className={classNames}>
             <span className={styles}>
                 {content}
             </span>

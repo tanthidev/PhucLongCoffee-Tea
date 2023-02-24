@@ -13,7 +13,7 @@ function SideBar () {
     let pageActive = currentUrl.replace(regex, "");
 
     return (
-        <nav className=' mx-auto'>
+        <nav className='mx-auto'>
             <ul className='flex justify-center'>
                 {
                     categories.map((item, index)=>(
