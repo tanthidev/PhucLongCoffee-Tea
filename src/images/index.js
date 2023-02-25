@@ -12,8 +12,8 @@ const images = {
             caphedamvi2: require("./common/cafe/Caphedamvi2.jpg"),
             caphedamvi3: require("./common/cafe/Caphedamvi3.jpg"),
 
-        }
-
+        },
+        quytrinhtachcaphe: require("./common/quytrinhtachcaphe.png"),
     },
     slide: {
         home: [
@@ -22,11 +22,16 @@ const images = {
         ]
     },
     banner: {
+        hatcaphephuclong: require("./banner/bannerHatcaphephuclong.jpg"),
+        hanhtrinhtachcaphedamvi: require("./banner/bannerHanhtrinhtachcaphedamvi.jpg"),
+        nghethuatphachecafe: require('./banner/bannerNghethuatphachecafe.jpg'),
+        hanhtrinhtachtradamvi: require("./banner/bannerHanhtrinhtachtradamvi.jpg"),
         home: {
             backGround: require("./banner/home/background.png"),
             teaBanner: require("./banner/home/image_1.png"),
             recruitment: require("./banner/home/image_2.png")
-        }
+        },
+
     },
     social: {
         facebook: require("./social/facebook.png"),
@@ -50,6 +55,24 @@ const images = {
             cafeCherry: require("./products/cafe/cafeCherry.jpg"),
             cafeMoka: require("./products/cafe/cafeMoka.jpg"),
         }
+    },
+    introduct: {
+        // Cafe
+        hanhtrinhtachcaphedamvi1: require('./introduct/hanhtrinhtachcaphedamvi/hanhtrinhtachcaphedamvi1.jpg'),
+        hanhtrinhtachcaphedamvi2: require('./introduct/hanhtrinhtachcaphedamvi/hanhtrinhtachcaphedamvi2.jpg'),
+        hanhtrinhtachcaphedamvi3: require('./introduct/hanhtrinhtachcaphedamvi/hanhtrinhtachcaphedamvi3.jpg'),
+        cafephin: require('./introduct/nghethuatphachecaphe/cafephin.jpg'),
+        cafevot: require('./introduct/nghethuatphachecaphe/cafephavot.jpg'),
+        coldbrew: require('./introduct/nghethuatphachecaphe/coldbrew.jpg'),
+        frenchpress: require('./introduct/nghethuatphachecaphe/frenchpress.jpg'),
+        pourover: require('./introduct/nghethuatphachecaphe/pourover.jpg'),
+        aeropress: require('./introduct/nghethuatphachecaphe/aeropress.jpg'),
+
+        //Trà
+        hanhtrinhtachtradamvi1: require('./introduct/hanhtrinhtachtradamvi/hanhtrinhtachtradamvi1.jpg'),
+        hanhtrinhtachtradamvi2: require('./introduct/hanhtrinhtachtradamvi/hanhtrinhtachtradamvi2.jpg'),
+        hanhtrinhtachtradamvi3: require('./introduct/hanhtrinhtachtradamvi/hanhtrinhtachtradamvi3.jpg'),
+
     }
 }
 

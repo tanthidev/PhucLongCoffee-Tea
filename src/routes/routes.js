@@ -30,12 +30,33 @@ const publicRoutes = [
         component: Tra,
     },
 
-    //Intro
+    //Introduction
+
+    // Hạt cà phê phúc long
     {
         path: '/cafe/hat-ca-phe-phuc-long',
         component: Introduction,
         data: dataIntro.hatCaPhePhucLong
-    }
+    },
+    // Hành trình tách cà phê đậm vị
+    {
+        path: '/cafe/hanh-trinh-tach-ca-phe-dam-vi',
+        component: Introduction,
+        data: dataIntro.hanhTrinhTachCaPheDamVi,
+    },
+    // Nghệ thuật pha chế Cà phê
+    {
+        path: '/cafe/nghe-thuat-pha-che',
+        component: Introduction,
+        data: dataIntro.ngheThuatPhaCheCafe
+    },
+
+    // Hành trình tách trà đậm vị
+    {
+        path: '/tra/hanh-trinh-tach-tra-dam-vi',
+        component: Introduction,
+        data: dataIntro.hanhTrinhTachTraDamVi,
+    },
 ];
 
 

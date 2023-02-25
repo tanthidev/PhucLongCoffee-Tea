@@ -3,7 +3,7 @@ import Button from "~/components/Button";
 
 function Content({content}) {
     return ( 
-        <div>
+        <div className="mb-20 mt-10">
             {
                 content.map((item, index)=>{
                     return(
@@ -19,7 +19,7 @@ function Content({content}) {
                                 <div>
                                     {
                                         item.title && (
-                                            <h3 className="text-5xl lg:text-6xl text-center lg:text-left uppercase mb-3 lg:mb-8">{item.title}</h3>
+                                            <h3 className="text-5xl text-center lg:text-left uppercase mb-3 lg:mb-8">{item.title}</h3>
                                         )
                                     }
                                     <div className="text-gray-700 text-3xl text-center lg:text-left lg:text-3xl leading-relaxed" dangerouslySetInnerHTML={{__html: item.descript.replace(/\n/g, '<br>')}}/>

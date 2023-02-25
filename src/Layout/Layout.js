@@ -23,8 +23,8 @@ function DefaultLayout({children}){
             link: '/cafe/hat-ca-phe-phuc-long',
             children: [
               {
-                title: "Hành trình tách cà phê vị đậm",
-                link: "/cafe/hanh-trinh-tach-ca-phe-vi-dam"
+                title: "Hành trình tách cà phê đậm",
+                link: "/cafe/hanh-trinh-tach-ca-phe-dam-vi"
               },
               {
                 title: "Hạt cà phê Phúc Long",
@@ -43,8 +43,8 @@ function DefaultLayout({children}){
             link: '/tra',
             children: [
               {
-                title: "Hành trình tách trà vị đậm",
-                link: "/tra/hanh-trinh-tach-tra-vi-dam"
+                title: "Hành trình tách trà đậm vị",
+                link: "/tra/hanh-trinh-tach-tra-dam-vi"
               },
               {
                 title: "Lá trà Phúc Long",
