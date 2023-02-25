@@ -3,12 +3,20 @@ import { Link } from "react-router-dom";
 function Button({content, icon, to, href, styles, type}) {
     
     let Type = 'button';
+    let props = {
+
+    };
 
     if(href) {
         Type = 'a'
     } else 
         if(to){
-            Type = Link
+            Type = Link;
+            props = {
+                ...props,
+                to: to,
+            }
+
         }
 
     let classNames = "border border-green-primary text-green-primary px-2 py-2 text-2xl rounded-lg hover:bg-green-primary hover:text-white"
@@ -17,7 +25,7 @@ function Button({content, icon, to, href, styles, type}) {
     }
 
     return ( 
-        <Type className={classNames}>
+        <Type className={classNames} {...props}>
             <span className={styles}>
                 {content}
             </span>

@@ -15,6 +15,7 @@ function Home(){
             <div className="w-full mx-auto">
                 <Adress/>
             </div>
+            
         </div>
     );
 }

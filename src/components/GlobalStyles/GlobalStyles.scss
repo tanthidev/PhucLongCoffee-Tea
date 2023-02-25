@@ -55,6 +55,13 @@ body{
 
 }
 
+.background__tea{
+  background-image: url("/images/common/bg_category_tea.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:contain;
+}
+
 // Scroll bar
 html *::-webkit-scrollbar {
   border-radius: 0;
@@ -105,6 +112,15 @@ html *::-webkit-scrollbar-track {
   100% {
     transform: translate(0, 0);
   }
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
 }
 
 

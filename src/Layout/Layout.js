@@ -8,7 +8,7 @@ import SideBarMobile from "./SideBar/SideBarMobile";
 export const LayoutContext = createContext();
 
 function DefaultLayout({children}){
-    const data = {
+    const dataSideBar = {
         categories: [
           //TRANG CHỦ
           {
@@ -20,7 +20,7 @@ function DefaultLayout({children}){
           // CÀ PHÊ
           {
             title: "CÀ PHÊ",
-            link: '/cafe',
+            link: '/cafe/hat-ca-phe-phuc-long',
             children: [
               {
                 title: "Hành trình tách cà phê vị đậm",
@@ -281,7 +281,7 @@ function DefaultLayout({children}){
 
     
     return(
-        <LayoutContext.Provider value={data}>
+        <LayoutContext.Provider value={dataSideBar}>
             <div>
                 <div className="fixed z-10 bg-white top-0 justify-center w-full">
                   <Header onClick={toggleSidebar}/>
