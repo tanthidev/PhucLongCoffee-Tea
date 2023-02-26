@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import ColMenu from "./ColMenu";
 
 
-function Menu({data}) {
+function Menu({data, onItemClick}) {
     return (
-      <ul className="text-black shadow-2xl rounded-xl overflow-hidden py-5">
+      <ul className="text-black shadow-2xl rounded-xl overflow-hidden py-5" onClick={onItemClick}>
         {data.some((item) => !!item.children) && (
           <ColMenu data={data.filter((item) => !!item.children)} />
         )}

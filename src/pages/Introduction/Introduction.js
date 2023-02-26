@@ -5,6 +5,7 @@ function Introduction({data}) {
     const [section , setSection] = useState(data.section[0].title || null);
     const [content, setContent] = useState(data.section[0].content || null);
     const [showContent, setShowContent] = useState(true);
+    const [typeRender, setTypeRender] = useState(data.section[0].type || null)
     const [currentUrl, setCurrentUrl] = useState(window.location.href);
  
 
@@ -12,12 +13,13 @@ function Introduction({data}) {
         const clickedSection = data.section.find((section) => section.title === title);
         setSection(clickedSection.title);
         setContent(clickedSection.content);
+        setTypeRender(clickedSection.type)
         setShowContent(false);
         setTimeout(() => setShowContent(true), 200);
         window.scrollTo({
             top: 350,
             behavior: "smooth"
-          });
+        });
     }
 
     //Re mount if change page
@@ -30,16 +32,18 @@ function Introduction({data}) {
           });
     },[currentUrl, data.section])
 
-
+    // console.log(data);
     /* A string that is used to set the border of the active section. */
     const active = "border-t border-b border-green-primary"
     return ( 
     <div >
+
         {/* Banner */}
         <div className="flex justify-center">
             <img src={data.banner} alt="banner"/>
         </div>
 
+        {/* Container */}
         <div className={`pt-5 lg:w-container mx-auto px-5 lg:px-0`}>
             <h1 className="font-lora uppercase text-center text-green-primary text-6xl">
                 {data.title}
@@ -50,7 +54,7 @@ function Introduction({data}) {
                 <img src={images.common.icon_tealeaves} alt="img" className="mx-auto"/>
             </div>
 
-           {/* If have header then render */}
+           {/* If have header intro then render */}
             {
                 !!data.header && (
                     <div className="mt-10">
@@ -63,6 +67,7 @@ function Introduction({data}) {
                     </div>
                 )
             }
+
 
            {/* If have section then render */}
             {
@@ -93,7 +98,7 @@ function Introduction({data}) {
             }
 
             <div className={`content-container ${showContent ? 'show' : ''} fade-in`}>
-                <Content key={content} content={content} />
+                <Content key={content} content={content} type={typeRender}/>
             </div>
         </div>
 

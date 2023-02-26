@@ -293,7 +293,7 @@ function DefaultLayout({children}){
                     </div>
                     {/* Mobile sidebar */}
                     <div className="block lg:hidden">
-                      {sidebarVisible && <SideBarMobile/>}
+                      {sidebarVisible && <SideBarMobile onClick={toggleSidebar}/>}
                     </div>
                     {/*  */}
                   </div>

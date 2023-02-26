@@ -1,8 +1,47 @@
 import React, {memo} from "react";
 import Button from "~/components/Button";
 
-function Content({content}) {
-    return ( 
+function Content({content, type}) {
+    // console.log(content);
+    if(type==='just_render'){
+        return (
+            <div className="lg:px-28 w-full">
+                {
+                    content.map((item, index)=> (
+                        <div key={index}>
+                            {
+                                (item.type === 'h1') &&  (<h1 className="text-5xl uppercase my-12 text-green-primary font-bold text-center">{item.render}</h1>)
+                            }
+                            {
+                                (item.type === 'h2') && (<h2 className="text-3xl my-6 uppercase text-green-primary font-bold">{item.render}</h2>)
+                            }
+                            {
+                                (item.type === 'h3') && (<h3 className=" text-3xl font-bold">{item.render}</h3>)
+                            }
+                            {
+                                (item.type === 'text') && (<p className="my-5 pl-4" dangerouslySetInnerHTML={{__html: item.render.replace(/\n/g, '<br>')}}/>)
+                            }
+                            {
+                                (item.type === 'image') && (<img className="my-10 mx-auto" src={item.render} alt='img'/>)
+                            }
+                            {
+                                (item.type=== 'list') && (
+                                    <ul className="list-disc pl-10">
+                                        {item.render.map((li, index1)=> (
+                                            <li key={index1}>{li}</li>
+                                        ))}
+                                    </ul>
+                                )
+                            }
+                        </div>
+
+
+                    ))
+                }
+            </div>
+        )
+    } else{
+        return ( 
         <div className="mb-20 mt-10">
             {
                 content.map((item, index)=>{
@@ -37,7 +76,7 @@ function Content({content}) {
                 })
             }
         </div>
-     );
+    );}
 }
 
 export default memo(Content);

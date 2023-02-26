@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import React, {useState, Fragment} from "react";
 
-function ItemSideBarMobile({data}) {
+function ItemSideBarMobile({data, onClick}) {
     const [showChildren, setShowChildren] = useState(false);
     const [buttonShowChildren, setButtonShowChildren] = useState(true)
 
@@ -16,7 +16,7 @@ function ItemSideBarMobile({data}) {
             <div className="grid justify-between border-b border-green-primary pr-5 pl-10 py-2">
                 <div>
                     <div className="flex">
-                        <Link to={data.link} className="font-bold text-gray-700 py-1">{data.title}</Link>
+                        <Link onClick={onClick} to={data.link} className="font-bold text-gray-700 py-1">{data.title}</Link>
                         <div className="flex items-center">
                             {data.children.length!==0 && 
                                 (buttonShowChildren ? 
@@ -33,16 +33,16 @@ function ItemSideBarMobile({data}) {
                                 if(item.children===0 || !(!!item.children)){
                                     return (
                                         <div key={index} className="ml-5 py-1">
-                                            <Link to={item.link}>{item.title}</Link>
+                                            <Link onClick={onClick} to={item.link}>{item.title}</Link>
                                         </div>
                                     )
                                 } else {
                                     return(
                                         <Fragment key={index}>
-                                            <Link className="font-bold ml-2 py-1 text-green-primary" key={index} to={item.link}>{item.title}</Link>
+                                            <Link onClick={onClick} className="font-bold ml-2 py-1 text-green-primary" key={index} to={item.link}>{item.title}</Link>
                                             {item.children.map((itemChildren, index1) => (
                                                 <div key={index1} className="ml-5 py-1"> 
-                                                    <Link to={itemChildren.link}>{itemChildren.title}</Link>
+                                                    <Link onClick={onClick} to={itemChildren.link}>{itemChildren.title}</Link>
                                                 </div>
                                             ))}
                                         </Fragment>

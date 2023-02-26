@@ -57,6 +57,27 @@ const publicRoutes = [
         component: Introduction,
         data: dataIntro.hanhTrinhTachTraDamVi,
     },
+
+    //Lá trà phúc long
+    {
+        path: '/tra/la-tra-phuc-long',
+        component: Introduction,
+        data: dataIntro.latraphuclong
+    },
+
+    //Cold brew tea
+    {
+        path: '/tra/cold-brew-tea-phong-cach-moi',
+        component: Introduction,
+        data: dataIntro.coldbrewtea
+    },
+
+    //NGhệ thuật pha chế trà
+    {
+        path: '/tra/nghe-thuat-pha-che',
+        component: Introduction,
+        data: dataIntro.ngheThuatPhaCheTra
+    }
 ];
 
 
