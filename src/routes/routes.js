@@ -5,6 +5,7 @@ import Tra from '~/pages/Tra';
 import Introduction from '~/pages/Introduction';
 import { dataIntro } from '~/Data/data';
 import NotFound from '~/components/NotFound';
+import Bakery from '~/pages/Bakery';
 
 //Public Routes
 const publicRoutes = [
@@ -22,8 +23,12 @@ const publicRoutes = [
         component: Cafe,
     },
     {
-        path: '/thuc-uong',
+        path: '/category/thuc-uong',
         component: ThucUong,
+    },
+    {
+        path: '/category/bakery',
+        component: Bakery,
     },
     {
         path: '/tra',
@@ -77,7 +82,8 @@ const publicRoutes = [
         path: '/tra/nghe-thuat-pha-che',
         component: Introduction,
         data: dataIntro.ngheThuatPhaCheTra
-    }
+    },
+
 ];
 
 

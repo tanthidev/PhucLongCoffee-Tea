@@ -4,6 +4,7 @@ import Story from "./Story";
 import Adress from "./Adress";
 
 function Home(){
+    document.title="Phúc Long Coffee & Tea"
     return(
         <div>
             <div className="h-fit -z-10 mb-10">

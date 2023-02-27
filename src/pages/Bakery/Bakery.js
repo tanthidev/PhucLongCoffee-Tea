@@ -2,7 +2,7 @@ import { dataProduct } from "~/Data/data";
 import ListProducts from "~/components/ListProducts";
 import { useEffect } from "react";
 
-function ThucUong() {
+function Bakery() {
     useEffect(()=> {
         window.scrollTo({
             top: 0,
@@ -10,8 +10,8 @@ function ThucUong() {
           });
     },[])
     return ( 
-        <ListProducts data={dataProduct.thucuong}/>
+        <ListProducts data={dataProduct.bakery}/>
      );
 }
 
-export default ThucUong;
+export default Bakery;

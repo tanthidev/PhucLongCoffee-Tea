@@ -1,4 +1,5 @@
 import React, {createContext, useState} from "react";
+import GototopButton from "~/components/GototopButton";
 
 import Footer from "./Footer";
 import Header from "./Header";
@@ -40,7 +41,7 @@ function DefaultLayout({children}){
           // TRÀ
           {
             title: "TRÀ",
-            link: '/tra',
+            link: '/tra/la-tra-phuc-long',
             children: [
               {
                 title: "Hành trình tách trà đậm vị",
@@ -73,11 +74,7 @@ function DefaultLayout({children}){
               {
                 title: "Bánh trán miệng",
                 link: "/category/bakery"
-              },
-              {
-                title: "Đồ ăn mặn",
-                link: "/category/dinning-offers",
-              },
+              }
             ]
           },
     
@@ -283,6 +280,9 @@ function DefaultLayout({children}){
     return(
         <LayoutContext.Provider value={dataSideBar}>
             <div>
+                <div className="fixed right-10 bottom-20 z-20">
+                  <GototopButton/>
+                </div>
                 <div className="fixed z-10 bg-white top-0 justify-center w-full">
                   <Header onClick={toggleSidebar}/>
                   {/* SideBar */}

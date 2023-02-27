@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 
 function ErrorBoundary(props) {
   const [hasError, setHasError] = useState(false);
@@ -18,7 +18,8 @@ function ErrorBoundary(props) {
 
   if (hasError) {
     // You can render any custom fallback UI
-    return <h1>Something went wrong.</h1>;
+    console.log("erorr");
+    return "";
   }
 
   return props.children;

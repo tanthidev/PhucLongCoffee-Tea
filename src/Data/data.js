@@ -135,7 +135,7 @@ export const dataIntro = {
 
     // Hành trình tách cà phê đậm vị
     hanhTrinhTachCaPheDamVi: {
-        title: 'HÀNH TRÌNH CỦA TÁCH CÀ PHÊ ĐẬM VỊ',
+        title: 'Hành trình tách cà phê đậm vị',
         banner: images.banner.hanhtrinhtachcaphedamvi,
         header: {
             content: "Tách cà phê đậm vị mà bạn đang thưởng thức, chính là kết quả của những nỗ lực không ngừng nghỉ của Phúc Long trong hơn nửa thế kỉ qua. Ít ai biết rằng, quy trình chế biến cà phê luôn đòi hỏi sự tỉ mỉ rất cao. Bất kỳ một mắt xích nào trong quy trình chế biến không được chú trọng cũng có thể làm cho cả chuỗi bị ảnh hưởng, từ khâu vun trồng đến các biện pháp diệt trừ sâu bệnh, cho đến khâu thu hoạch, chế biến, vận chuyển, rang xay, đóng gói và cuối cùng là tách cà phê đậm vị.",
@@ -762,4 +762,489 @@ export const dataIntro = {
         ]
     }
     
+}
+
+export const dataProduct = {
+    thucuong: {
+        title: 'Thức uống',
+        banner: images.banner.thucuong,
+        listProduct: [
+            //Frame
+            // {
+            //     nameProduct: '',
+            //     englishName: '',
+            //     image: '',
+            //     price: '',
+            //     new: false,
+            //     link: ''
+            // },
+
+            // Hoa Tuyết Berry Berry
+            {   
+                idProduct: 'TU01',
+                nameProduct: 'Hoa Tuyết Berry Berry',
+                englishName: '',
+                image: images.products.thucuong.hoatuyetberry,
+                price: '70.000',
+                new: true,
+                link: ''
+            },
+            
+            // Trà Sữa Berry Berry
+            {   
+                idProduct: 'TU02',
+                nameProduct: 'Trà Sữa Berry Berry',
+                englishName: '',
+                image: images.products.thucuong.trasuaberry,
+                price: '60.000',
+                new: true,
+                link: ''
+            },
+
+            // Caramen Chảy
+            {   
+                idProduct: 'TU03',
+                nameProduct: 'Caramen Chảy',
+                englishName: '',
+                image: images.products.thucuong.caramenchay,
+                price: '50.000',
+                new: false,
+                link: ''
+            },
+
+            // Cappuchino - Vietnamo
+            {   
+                idProduct: 'TU04',
+                nameProduct: 'Cappuchino - Vietnamo',
+                englishName: '',
+                image: images.products.thucuong.cappochino,
+                price: '45.000',
+                new: false,
+                link: ''
+            },
+
+             // Ngọc Viễn Đông
+             {   
+                idProduct: 'TU05',
+                nameProduct: 'Ngọc Viễn Đông',
+                englishName: '',
+                image: images.products.thucuong.ngocviendong,
+                price: '45.000',
+                new: false,
+                link: ''
+            },
+
+            //Phin Sữa Đá - Năng Lượng
+            {   
+                idProduct: 'TU06',
+                nameProduct: 'Phin Sữa Đá - Năng Lượng',
+                englishName: '',
+                image: images.products.thucuong.phinsuada,
+                price: '45.000',
+                new: false,
+                link: ''
+            },
+            
+            
+            //Phin Đen Đá - Đậm Đà
+            {   
+                idProduct: 'TU07',
+                nameProduct: 'Phin Đen Đá - Đậm Đà',
+                englishName: '',
+                image: images.products.thucuong.phindenda,
+                price: '45.000',
+                new: false,
+                link: ''
+            },
+
+            //Sữa Chua Phúc Bồn Tử Đác Cam
+            {   
+                idProduct: 'TU08',
+                nameProduct: 'Sữa Chua Phúc Bồn Tử Đác Cam',
+                englishName: 'Berry Berry Yogurt',
+                image: images.products.thucuong.suachuaphucbontudaccam,
+                price: '70.000',
+                new: false,
+                link: ''
+            },
+
+            //Sữa Chua Xoài Đác Thơm
+            {   
+                idProduct: 'TU09',
+                nameProduct: 'Sữa Chua Xoài Đác Thơm',
+                englishName: 'Tropical Yogurt',
+                image: images.products.thucuong.suachuaxoaidacthom,
+                price: '70.000',
+                new: false,
+                link: ''
+            },
+
+            //Trà Lài Đác Thơm
+            {   
+                idProduct: 'TU010',
+                nameProduct: 'Trà Lài Đác Thơm',
+                englishName: 'Forest Jasmine Tea',
+                image: images.products.thucuong.tralaidacthom,
+                price: '50.000',
+                new: false,
+                link: ''
+            },
+
+            //Hồng Trà Đác Cam
+            {   
+                idProduct: 'TU011',
+                nameProduct: 'Hồng Trà Đác Cam',
+                englishName: 'Forest Black Tea',
+                image: images.products.thucuong.hongtradaccam,
+                price: '70.000',
+                new: false,
+                link: ''
+            },
+
+            //Trà Nhãn - Sen
+            {   
+                idProduct: 'TU012',
+                nameProduct: 'Trà Nhãn - Sen',
+                englishName: 'Longan Tea (Lotus)',
+                image: images.products.thucuong.tranhan,
+                price: '50.000',
+                new: false,
+                link: ''
+            },
+
+            //Trà Nhãn - Lai
+            {   
+                idProduct: 'TU013',
+                nameProduct: 'Trà Nhãn - Lài',
+                englishName: 'Longan Tea (Lotus)',
+                image: images.products.thucuong.tranhan,
+                price: '50.000',
+                new: false,
+                link: ''
+            },
+
+            //Trà Vải - Lài
+            {   
+                idProduct: 'TU014',
+                nameProduct: 'Trà Vải - Lài',
+                englishName: 'Lychee Tea (Jasmine)',
+                image: images.products.thucuong.tranhan,
+                price: '50.000',
+                new: false,
+                link: ''
+            },
+
+            //Trà Thảo Mộc
+            {   
+                idProduct: 'TU015',
+                nameProduct: 'Trà Thảo Mộc',
+                englishName: 'Lucky Tea',
+                image: images.products.thucuong.trathaomoc,
+                price: '50.000',
+                new: false,
+                link: ''
+            },
+
+            //Trà Vải - Sen
+            {   
+                idProduct: 'TU016',
+                nameProduct: 'Trà Vải - Sen',
+                englishName: 'Lychee Tea (Lotus)',
+                image: images.products.thucuong.tranhan,
+                price: '50.000',
+                new: false,
+                link: ''
+            },
+            
+            //Trà Đào Phúc Long
+            {   
+                idProduct: 'TU017',
+                nameProduct: 'Trà Đào Phúc Long',
+                englishName: 'Phuc Long Peach Tea',
+                image: images.products.thucuong.tradaophuclonh,
+                price: '50.000',
+                new: false,
+                link: ''
+            },
+
+            //Hồng Trà Sữa
+            {   
+                idProduct: 'TU018',
+                nameProduct: 'Hồng Trà Sữa',
+                englishName: 'Phuc Long Black Milk Tea',
+                image: images.products.thucuong.hongtrasua,
+                price: '45.000',
+                new: false,
+                link: ''
+            },
+
+            //Trà Sữa Phúc Long
+            {   
+                idProduct: 'TU019',
+                nameProduct: 'Trà Sữa Phúc Long',
+                englishName: 'Phuc Long Tea Latte',
+                image: images.products.thucuong.hongtrasua,
+                price: '45.000',
+                new: false,
+                link: ''
+            },
+
+            //Trà Ô Long Dâu
+            {   
+                idProduct: 'TU020',
+                nameProduct: 'Trà Ô Long Dâu',
+                englishName: 'Strawberry Oolong Tea',
+                image: images.products.thucuong.traolongdau,
+                price: '50.000',
+                new: false,
+                link: ''
+            },
+
+            //Trà Ô Long Sữa
+            {   
+                idProduct: 'TU021',
+                nameProduct: 'Trà Ô Long Sữa',
+                englishName: 'Oolong Milk Tea',
+                image: images.products.thucuong.hongtrasua,
+                price: '45.000',
+                new: false,
+                link: ''
+            },
+
+            //Trà Ô Long Mãng Cầu
+            {   
+                idProduct: 'TU022',
+                nameProduct: 'Trà Ô Long Mãng Cầu',
+                englishName: '',
+                image: images.products.thucuong.traolongmancau,
+                price: '54.000',
+                new: false,
+                link: ''
+            },
+            //Trà Hoa Hồng
+            {   
+                idProduct: 'TU023',
+                nameProduct: 'Trà Hoa Hồng',
+                englishName: 'Rose Tea',
+                image: images.products.thucuong.trahoahong,
+                price: '50.000',
+                new: false,
+                link: ''
+            },
+            
+            //Latte Trà Xanh
+            {   
+                idProduct: 'TU024',
+                nameProduct: 'Latte Trà Xanh',
+                englishName: 'Rose Tea',
+                image: images.products.thucuong.lattetraxanh,
+                price: '45.000',
+                new: false,
+                link: ''
+            },
+
+            //Trà Xanh Đá Xay
+            {   
+                idProduct: 'TU025',
+                nameProduct: 'Trà Xanh Đá Xay',
+                englishName: 'Green Tea Ice Blended',
+                image: images.products.thucuong.traxanhdaxay,
+                price: '60.000',
+                new: false,
+                link: ''
+            },
+            //Sô-Cô-La Xay Cùng Hạnh Nhân Và Espresso
+            {   
+                idProduct: 'TU026',
+                nameProduct: 'Sô-Cô-La Xay Cùng Hạnh Nhân Và Espresso',
+                englishName: 'Choco-Almond Crunch',
+                image: images.products.thucuong.socoladaxay,
+                price: '60.000',
+                new: false,
+                link: ''
+            },
+
+            //Bánh Oreo Xay Cùng Cà Phê Cappuccino
+            {   
+                idProduct: 'TU027',
+                nameProduct: 'Bánh Oreo Xay Cùng Cà Phê Cappuccino',
+                englishName: 'Oreo Cappuccino Blast',
+                image: images.products.thucuong.socoladaxay,
+                price: '60.000',
+                new: false,
+                link: ''
+            },
+
+            //Cà Phê Cappuccino Đá Xay
+            {   
+                idProduct: 'TU028',
+                nameProduct: 'Cà Phê Cappuccino Đá Xay',
+                englishName: 'Cappuccino Blast',
+                image: images.products.thucuong.cappochinodaxay,
+                price: '60.000',
+                new: false,
+                link: ''
+            },
+
+            //Sô-Cô-La Cà Phê Đá Xay
+            {   
+                idProduct: 'TU029',
+                nameProduct: 'Sô-Cô-La Cà Phê Đá Xay',
+                englishName: 'Choco Lover',
+                image: images.products.thucuong.socoladaxay,
+                price: '60.000',
+                new: false,
+                link: ''
+            },
+            
+
+            //Trà Đào Đá Xay
+            {   
+                idProduct: 'TU030',
+                nameProduct: 'Trà Đào Đá Xay',
+                englishName: 'Peach Tea',
+                image: images.products.thucuong.tradaodaxay,
+                price: '65.000',
+                new: false,
+                link: ''
+            },
+            
+            //Táo Và Dâu Ép
+            {   
+                idProduct: 'TU031',
+                nameProduct: 'Táo Và Dâu Ép',
+                englishName: 'Forest Fruit',
+                image: images.products.thucuong.taodauep,
+                price: '50.000',
+                new: false,
+                link: ''
+            },
+
+            //Thơm Và Dâu Ép
+            {   
+                idProduct: 'TU032',
+                nameProduct: 'Thơm Và Dâu Ép',
+                englishName: 'Tropical Fruit',
+                image: images.products.thucuong.taodauep,
+                price: '50.000',
+                new: false,
+                link: ''
+            },
+
+            //Táo ép
+            {   
+                idProduct: 'TU033',
+                nameProduct: 'Táo Ép',
+                englishName: 'Apple',
+                image: images.products.thucuong.taoep,
+                price: '45.000',
+                new: false,
+                link: ''
+            },
+
+            //Táo ép
+            {   
+                idProduct: 'TU034',
+                nameProduct: 'Dâu Ép',
+                englishName: 'Strawberry',
+                image: images.products.thucuong.dauep,
+                price: '55.000',
+                new: false,
+                link: ''
+            },
+            //Cam ep
+            {   
+                idProduct: 'TU035',
+                nameProduct: 'Cam Ép',
+                englishName: 'Orange',
+                image: images.products.thucuong.camep,
+                price: '45.000',
+                new: false,
+                link: ''
+            },
+
+            //Cam ep
+            {   
+                idProduct: 'TU036',
+                nameProduct: 'Sinh Tố Dâu',
+                englishName: 'Red Sunset',
+                image: images.products.thucuong.sinhtodau,
+                price: '55.000',
+                new: false,
+                link: ''
+            },
+            
+        ]
+        
+    },
+
+    bakery: {
+        title: 'Bakery',
+        banner: images.banner.bakery,
+        listProduct: [
+            // Bánh Mì Phúc Long (M)
+            {
+                idProduct: 'BKR01',
+                nameProduct: 'Bánh Mì Phúc Long (M)',
+                englishName: '',
+                image: images.products.bakery.banhmiphuclong,
+                price: '35.000',
+                new: false,
+                link: ''
+            },
+            // Green Tea Choco Cake
+            {
+                idProduct: 'BKR02',
+                nameProduct: 'Green Tea Choco Cake',
+                englishName: '',
+                image: images.products.bakery.greenteachococake,
+                price: '35.000',
+                new: false,
+                link: ''
+            },
+            // Passion Panna Cotta
+            {
+                idProduct: 'BKR03',
+                nameProduct: 'Passion Panna Cotta',
+                englishName: '',
+                image: images.products.bakery.greenteachococake,
+                price: '35.000',
+                new: false,
+                link: ''
+            },
+            // Tiramisu Mini
+            {
+                idProduct: 'BKR04',
+                nameProduct: 'Tiramisu Mini',
+                englishName: '',
+                image: images.products.bakery.tiramisumini,
+                price: '35.000',
+                new: false,
+                link: ''
+            },
+
+            // Butter Chocolate Croissant 30g
+            {
+                idProduct: 'BKR05',
+                nameProduct: 'Butter Chocolate Croissant 30g',
+                englishName: '',
+                image: images.products.bakery.butterchocolatecroissant,
+                price: '22.000',
+                new: false,
+                link: ''
+            },
+
+            // Butter Chocolate Croissant 30g
+            {
+                idProduct: 'BKR06',
+                nameProduct: 'Pure Butter Croissant 30g',
+                englishName: '',
+                image: images.products.bakery.purebuttercoissant,
+                price: '19.000',
+                new: false,
+                link: ''
+            },
+            
+        ]
+    }
 }

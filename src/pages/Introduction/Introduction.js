@@ -26,11 +26,13 @@ function Introduction({data}) {
     useEffect(()=>{
         setContent(data.section[0].content);
         setCurrentUrl(window.location.href);
+        document.title = data.title + " - Phúc Long";
         window.scrollTo({
             top: 0,
             behavior: "smooth"
           });
-    },[currentUrl, data.section])
+    },[currentUrl, data.section, data.title])
+
 
     // console.log(data);
     /* A string that is used to set the border of the active section. */
