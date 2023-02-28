@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import SideBar from "./SideBar";
 import SideBarMobile from "./SideBar/SideBarMobile";
+import Cart from "~/components/Cart";
 
 export const LayoutContext = createContext();
 
@@ -279,30 +280,32 @@ function DefaultLayout({children}){
     
     return(
         <LayoutContext.Provider value={dataSideBar}>
-            <div>
-                <div className="fixed right-10 bottom-20 z-20">
-                  <GototopButton/>
-                </div>
-                <div className="fixed z-10 bg-white top-0 justify-center w-full">
-                  <Header onClick={toggleSidebar}/>
-                  {/* SideBar */}
-                  <div>
-                    {/* destop sidebar */}
-                    <div className="hidden lg:block border-b-2 border-gray-200 py-1">
-                      <SideBar />
-                    </div>
-                    {/* Mobile sidebar */}
-                    <div className="block lg:hidden">
-                      {sidebarVisible && <SideBarMobile onClick={toggleSidebar}/>}
-                    </div>
-                    {/*  */}
+            <Cart>
+              <div>
+                  <div className="fixed right-10 bottom-20 z-20">
+                    <GototopButton/>
                   </div>
-                </div>
-                <div className="mt-26">
-                  {children}
-                </div>
-                <Footer/>
-            </div>
+                  <div className="fixed z-10 bg-white top-0 justify-center w-full">
+                    <Header onClick={toggleSidebar}/>
+                    {/* SideBar */}
+                    <div>
+                      {/* destop sidebar */}
+                      <div className="hidden lg:block border-b-2 border-gray-200 py-1">
+                        <SideBar />
+                      </div>
+                      {/* Mobile sidebar */}
+                      <div className="block lg:hidden">
+                        {sidebarVisible && <SideBarMobile onClick={toggleSidebar}/>}
+                      </div>
+                      {/*  */}
+                    </div>
+                  </div>
+                  <div className="mt-26">
+                    {children}  
+                  </div>
+                  <Footer/>
+              </div>
+            </Cart>
         </LayoutContext.Provider>
     );
 }

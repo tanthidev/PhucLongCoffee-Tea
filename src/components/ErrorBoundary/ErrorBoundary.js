@@ -1,4 +1,5 @@
 import  { useState, useEffect } from 'react';
+import NotFound from '../NotFound';
 
 function ErrorBoundary(props) {
   const [hasError, setHasError] = useState(false);
@@ -6,8 +7,6 @@ function ErrorBoundary(props) {
   useEffect(() => {
     const errorHandler = (error, errorInfo) => {
       setHasError(true);
-      // You can also log the error to an error reporting service
-      console.log(error, errorInfo);
     };
 
     window.addEventListener('error', errorHandler);
@@ -18,7 +17,8 @@ function ErrorBoundary(props) {
 
   if (hasError) {
     // You can render any custom fallback UI
-    console.log("erorr");
+    
+    <NotFound/>
     return "";
   }
 

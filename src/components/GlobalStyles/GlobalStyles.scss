@@ -76,6 +76,50 @@ html *::-webkit-scrollbar-track {
   background-color: rgba(193, 20, 20, 0);
 }
 
+.input-wrapper {
+  position: relative;
+  width: 0;
+}
+
+.changed {
+  animation: pulse 0.5s ease-in-out;
+}
+
+.button-add{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: left 0.7s ease-out;
+}
+
+.input-quatity{
+  position: absolute;
+  right: 30%;
+  transform: translate(-50%, 0);
+  transition: right 0.7s ease-out;
+}
+
+.move-left{
+  left: 35%;
+}
+
+.move-right{
+  right: 0%;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
 
 // Animation
 @keyframes shake {

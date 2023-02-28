@@ -1,13 +1,11 @@
 import { Link } from "react-router-dom";
 import React, {useLayoutEffect, useState} from "react";
-import Tippy from '@tippyjs/react';
 import "tippy.js/dist/tippy.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Button from "~/components/Button";
 import images from "~/images";
-import { faBars, faCartShopping, faClose } from "@fortawesome/free-solid-svg-icons";
-import ProducstCart from "~/components/ProducstCart";
+import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
+import ButtonCart from "~/components/ButtonCart";
 
 function Header ({onClick}) {
 
@@ -64,17 +62,7 @@ function Header ({onClick}) {
                         <span className="ml-1 cursor-pointer">EN</span>
                     </div>
 
-                    <Tippy 
-                        content={<ProducstCart/>}
-                        placement= 'top-end'
-                        arrow={false}
-                        delay= {[0,0]}
-                        interactive={true}
-                        >
-                        <div>
-                            <Button content={"Giỏ hàng"} icon={<FontAwesomeIcon icon={faCartShopping}/>}/>
-                        </div>
-                    </Tippy>
+                    <ButtonCart/>
                     
 
                 </div>

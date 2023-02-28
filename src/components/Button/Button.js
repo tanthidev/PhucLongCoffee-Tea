@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
-function Button({content, icon, to, href, styles, type}) {
+function Button({content, icon, to, href, styles, type, onClick}) {
     
     let Type = 'button';
     let props = {
-
+        onClick,
     };
 
     if(href) {
